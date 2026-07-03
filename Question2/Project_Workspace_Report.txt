@@ -1,0 +1,20 @@
+--- PROJECT WORKSPACE SECURITY REPORT ---
+
+1. Umask Value Used: 0022 (Default prior to manual chmod adjustment)
+
+2. Directory Structure:
+secure_workspace:
+code
+docs
+
+secure_workspace/code:
+
+secure_workspace/docs:
+project_plan.txt
+
+3. Ownership and Final Permissions:
+drwxr-x--- 4 vinaytambey000 vinaytambey000 4096 Jul  3 08:14 secure_workspace
+-rwxr-x--- 1 vinaytambey000 vinaytambey000    0 Jul  3 08:14 secure_workspace/docs/project_plan.txt
+
+4. Security Explanation:
+By setting the permissions to 750 (rwxr-x---), we ensure that the owner has full control, group members can read and traverse the directories, and 'others' have absolutely zero access. This strict exclusion of 'others' protects sensitive project documentation and source code from being viewed, executed, or modified by unauthorized system users.
