@@ -1,4 +1,4 @@
-# Command Line Interfaces and Scripting - SGA
+# Command Line Interfaces and Scripting - SGA (Completed)
 
 This repository contains my Staff Graded Assignment (SGA) for the **Command Line Interfaces and Scripting** course, completed as part of the BSc in Computer Science program at BITS Pilani. 
 
