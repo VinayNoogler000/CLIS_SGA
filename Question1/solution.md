@@ -17,7 +17,7 @@ uid=1000(vinaytambey000) gid=1000(vinaytambey000) groups=1000(vinaytambey000),4(
 This command retrieves the user's UID, primary group GID, and supplementary groups. I observed my specific user identity, which verifies my system access permissions.
 
 **Screenshot:**  
-![Step 1]()
+![Step 1](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question1/Screenshots/step1.png?raw=true)
 
 </details>
 
@@ -42,7 +42,7 @@ echo $SHELL
 This command prints the value of the SHELL environment variable. It confirmed that my terminal session is actively operating within the Bash shell environment.
 
 **Screenshot:**  
-![Step 2]()
+![Step 2](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question1/Screenshots/step2.png?raw=true)
 
 </details>
 
@@ -67,7 +67,7 @@ pwd
 This command outputs the absolute path of the current directory. This verified that I am correctly positioned inside the designated `Question1` folder for this task.
 
 **Screenshot:**  
-![Step 3]()
+![Step 3](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question1/Screenshots/step3.png?raw=true)
 
 </details>
 
@@ -96,7 +96,7 @@ drwxrwxr-x 2 vinaytambey000 vinaytambey000 4096 Jul  3 07:47 Screenshots
 The ls -la command lists all files and directories, including hidden items (starting with '.' dot), in a long format detailing permissions and ownership. It allowed me to view the complete contents and security structure of my current workspace.
 
 **Screenshot:**  
-![Step 4]()
+![Step 4](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question1/Screenshots/step4.png?raw=true)
 
 </details>
 
@@ -129,7 +129,7 @@ rtt min/avg/max/mdev = 0.364/0.507/0.856/0.201 ms
 This command sends exactly 4 ICMP echo request packets to Google's Public DNS server to test network reachability. The transmission statistics showing 0% packet loss verified that the Linux environment has active outbound internet connectivity.
 
 **Screenshot:**  
-![Step 5 - ]()
+![Step 5 - ](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question1/Screenshots/step5.png?raw=true)
 
 </details>
 
@@ -154,6 +154,6 @@ No output on screen; file is created silently.
 This command block groups all the previous verification commands, adds formatting headers using echo, and redirects (>) the entire standard output into a new file named `Environment_Report.txt`. This successfully compiled the required environment data into the final submission document.
 
 **Screenshot:**  
-![Step 6]()
+![Step 6](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question1/Screenshots/step6.png?raw=true)
 
 </details>
