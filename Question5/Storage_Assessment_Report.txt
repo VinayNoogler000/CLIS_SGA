@@ -1,0 +1,16 @@
+--- STORAGE ASSESSMENT REPORT ---
+
+1. Available Storage Devices:
+The system currently utilizes a single 50GB primary disk (/dev/sda). 
+
+2. Mounted File Systems & Disk Usage:
+The primary root filesystem (/) is mounted on /dev/sda1. It has a total size of 50G, with 10G used and 38G available (22% utilization). A temporary filesystem (tmpfs) is mounted on /dev/shm.
+
+3. Inode Utilization:
+The root partition has 3.2 million total inodes. Only 150K are used (5% utilization), leaving 3.0 million available. 
+
+4. Storage Health Observations:
+The storage system is currently highly healthy. Both physical capacity (78% free) and inode capacity (95% free) have abundant headroom for the new application server deployment.
+
+5. Recommendations:
+While current capacity is sufficient, I recommend implementing logical volume management (LVM) for future deployments to allow for dynamic volume resizing. Additionally, setting up a cron job to monitor and alert if /dev/sda1 exceeds 80% usage will prevent future application downtime.
