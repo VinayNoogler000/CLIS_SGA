@@ -1,0 +1,27 @@
+--- USER INFO ---
+uid=1000(vinaytambey000) gid=1000(vinaytambey000) groups=1000(vinaytambey000),4(adm),27(sudo),996(docker)
+
+--- SHELL ---
+/bin/bash
+
+--- DIRECTORY ---
+/home/vinaytambey000/CLIS_SGA/Question1
+
+--- WORKSPACE FILES ---
+total 20
+drwxrwxr-x 3 vinaytambey000 vinaytambey000 4096 Jul  3 08:00 .
+drwxrwxr-x 8 vinaytambey000 vinaytambey000 4096 Jul  3 07:08 ..
+-rw-rw-r-- 1 vinaytambey000 vinaytambey000  233 Jul  3 08:00 Environment_Report.txt
+drwxrwxr-x 2 vinaytambey000 vinaytambey000 4096 Jul  3 07:51 Screenshots
+-rw-rw-r-- 1 vinaytambey000 vinaytambey000 3907 Jul  3 08:00 solution.md
+
+--- NETWORK TEST ---
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=114 time=1.32 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=114 time=0.454 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=114 time=0.442 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=114 time=0.470 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3044ms
+rtt min/avg/max/mdev = 0.442/0.672/1.323/0.375 ms
