@@ -17,7 +17,7 @@ No output on screen; directories and files are created silently.
 I first explicitly set the `umask` to `0022` (the standard default) so I can observe default permissions. Then, I used `mkdir -p` to create a parent directory named `secure_workspace` with two subdirectories (docs and code), and created a dummy text file inside to represent project data.
 
 **Screenshot:**  
-![Step 1]()
+![Step 1](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question2/Screenshots/step1.png?raw=true)
 
 </details>
 
@@ -45,7 +45,7 @@ drwxr-xr-x 4 user user 4096 Jul  3 13:40 secure_workspace
 Using `ls -ld`, I inspected the initial permissions and ownership. The directory has 755 (rwxr-xr-x) permissions, and the file has 644 (rw-r--r--). This means "others" (anyone outside my user/group) currently have read access to my project files, which is a security risk for a private workspace.
 
 **Screenshot:**  
-![Step 2]()
+![Step 2](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question2/Screenshots/step2.png?raw=true)
 
 </details>
 
@@ -63,14 +63,14 @@ Using `ls -ld`, I inspected the initial permissions and ownership. The directory
 chmod -R 750 secure_workspace
 ```
 
-**Expected Output:**
+**Expected Output:**  
 No output on screen; permissions are modified silently.
 
 **Explanation:**  
 I used the `chmod` command with the `-R` (recursive) flag to change the permissions of the directory and all its contents to 750. This sets the owner permissions to read/write/execute (7), the group to read/execute (5), and completely removes all access (0) for "others".
 
 **Screenshot:**  
-![Step 3]()
+![Step 3](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question2/Screenshots/step3.png?raw=true)
 
 </details>
 
@@ -98,7 +98,7 @@ drwxr-x--- 4 user user 4096 Jul  3 13:40 secure_workspace
 Re-running the list command verifies the changes. The permissions now show --- for the "others" category at the end of the permission string. The project data is now isolated from unauthorized users on the system.
 
 **Screenshot:**  
-![Step 4]()
+![Step 4](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question2/Screenshots/step4.png?raw=true)
 
 </details>
 
@@ -132,6 +132,6 @@ No output on screen; the report file is generated.
 This command block generates the required `Project_Workspace_Report.txt`. It dynamically pulls the directory tree, the final ownership/permission data, and appends a written explanation of how the Linux permission model protects the team's data, fulfilling all rubric requirements.
 
 **Screenshot:**  
-![Step ]()
+![Step 5](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question2/Screenshots/step5.png?raw=true)
 
 </details>
