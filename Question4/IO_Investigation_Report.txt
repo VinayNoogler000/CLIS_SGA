@@ -1,0 +1,13 @@
+--- I/O INVESTIGATION REPORT ---
+
+1. Open Files & File Descriptors:
+Using /proc/$$/fd, the standard file descriptors were verified: 0 (stdin), 1 (stdout), and 2 (stderr). All were correctly linked to the active terminal. 
+
+2. Output and Error Redirection:
+Standard output (1>) and standard error (2>) were successfully segregated into stdout.log and stderr.log respectively. This proves that application logging can be cleanly split to isolate critical errors from routine info logs.
+
+3. Resource Limits:
+The open file limit per process (ulimit -n) is currently set to 1024. If the application opens more files/network sockets than this threshold, I/O operations will fail.
+
+4. How Linux Manages File I/O:
+Linux operates on the principle that "everything is a file." The kernel manages I/O operations by assigning an integer (File Descriptor) to every open file, socket, or pipe. The Virtual File System (VFS) provides a unified interface, allowing user-space applications to read and write to hardware and logs purely by manipulating these descriptor streams.
