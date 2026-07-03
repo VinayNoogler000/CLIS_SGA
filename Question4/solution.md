@@ -21,7 +21,7 @@ lrwx------ 1 user user 64 Jul  3 14:33 255 -> /dev/pts/0
 By examining the file descriptors (`fd`) for the current shell's Process ID (`$$`) inside the `/proc` virtual filesystem, I identified the three standard Linux I/O streams: `0` (Standard Input), `1` (Standard Output), and `2` (Standard Error), all currently pointing to the pseudo-terminal (`/dev/pts/0`).
 
 **Screenshot:**  
-![Step 1]()
+![Step 1](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question4/Screenshots/step1.png?raw=true)
 
 </details>
 
@@ -53,7 +53,7 @@ ls: cannot access '/fake_directory': No such file or directory
 I demonstrated stream segregation by using `>` to redirect successful standard output (FD 1) into `stdout.log`, and `2>` to explicitly catch standard error (FD 2) from a failed command into `stderr.log`. Viewing the files confirms the data was successfully routed away from the terminal screen.
 
 **Screenshot:**  
-![Step 2]()
+![Step 2](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question4/Screenshots/step2.png?raw=true)
 
 </details>
 
@@ -80,7 +80,7 @@ ulimit -n
 The `ulimit -n` command displays the "open files" limit. I observed that a single process can open a maximum of 1024 file descriptors simultaneously. If an application is experiencing logging issues, hitting this limit (the "Too many open files" error) is a primary technical culprit.
 
 **Screenshot:**  
-![Step 3]()
+![Step 3](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question4/Screenshots/step3.png?raw=true)
 
 </details>
 
@@ -119,6 +119,6 @@ No output on screen; the report file is generated.
 This heredoc block compiles the raw technical data and pairs it with a conceptual explanation of Linux file I/O and descriptor management into the final `IO_Investigation_Report.txt` required for the assignment submission.
 
 **Screenshot:**  
-![Step 4]()
+![Step 4](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question4/Screenshots/step4.png?raw=true)
 
 </details>
