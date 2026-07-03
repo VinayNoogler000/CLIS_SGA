@@ -29,7 +29,7 @@ tmpfs           512K      1    512K    1% /dev/shm
 I used `lsblk` to identify the physical block devices attached to the system. I then used `df -h` to analyze the mounted file systems and their human-readable capacity, and `df -i` to check the inode utilization (the limit on the number of files that can be created).
 
 **Screenshot:**  
-![Step 1]()
+![Step 1](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question5/Screenshots/step1.png?raw=true)
 
 </details>
 
@@ -76,7 +76,7 @@ The terminal screen will switch to the visual vi editor interface, and then retu
 The `vi` editor is a modal text editor native to Linux. By switching between command mode and insert mode, I was able to manually draft, edit, and safely save the storage assessment report directly from the command line.
 
 **Screenshot:**  
-![Step 2]()
+![Step 2](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question5/Screenshots/step2.png?raw=true)
 
 </details>
 
@@ -101,6 +101,6 @@ Displays the exact text entered in Action 2.
 I used the `cat` command to output the contents of the newly created file to the terminal, confirming that `vi` successfully wrote the data to the disk and the report is ready for submission.
 
 **Screenshot:**  
-![Step 3]()
+![Step 3](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question5/Screenshots/step3.png?raw=true)
 
 </details>
