@@ -17,7 +17,7 @@ No output on screen; files and links are created silently.
 I created a base text file named `original.txt`. Then, I used the `ln` command to create a hard link (`hard_link.txt`) which points to the same underlying disk data, and `ln -s` to create a symbolic (soft) link (`sym_link.txt`) which acts as a shortcut pointing to the filename.
 
 **Screenshot:**  
-![Step 1]()
+![Step 1](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question3/Screenshots/step1.png?raw=true)
 
 </details>
 
@@ -51,7 +51,7 @@ Device: 801h/2049d	Inode: 125432      Links: 2
 Using `ls -li` and `stat` commands, I observed that `original.txt` and `hard_link.txt` share the exact same inode number (e.g., 125432) and the link count is 2. The `sym_link.txt` has a completely different inode number with a link count of 1 and points to the text path of the original file.
 
 **Screenshot:**  
-![Step 2]()
+![Step 2](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question3/Screenshots/step2.png?raw=true)
 
 </details>
 
@@ -81,7 +81,7 @@ cat: sym_link.txt: No such file or directory
 After deleting the original file, the hard link still displayed the text perfectly because the underlying data blocks are retained until the link count reaches zero. The symbolic link, however, failed because the file path it was pointing to no longer exists, resulting in a dangling link.
 
 **Screenshot:**  
-![Step 3]()
+![Step 3](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question3/Screenshots/step3.png?raw=true)
 
 </details>
 
@@ -121,6 +121,6 @@ No output on screen; the report file is generated silenty.
 I used a cat heredoc (<< 'EOF') to automatically write a detailed, multi-line report into `Link_Analysis_Report.txt`. This report summarizes the technical differences, metadata observations, and operational behaviors of Linux file links, fulfilling all grading criteria.
 
 **Screenshot:**  
-![Step 4]()
+![Step 4](https://github.com/VinayNoogler000/CLIS_SGA/blob/main/Question3/Screenshots/step4.png?raw=true)
 
 </details>
