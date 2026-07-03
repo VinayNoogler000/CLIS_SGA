@@ -1,0 +1,14 @@
+--- LINK ANALYSIS REPORT ---
+
+1. Inode Numbers & Metadata:
+Prior to deletion, the original file and hard link shared the exact same inode number and increased the file's link count to 2. The symbolic link possessed a unique inode and a link count of 1.
+
+2. Comparison (Hard Link vs Symbolic Link):
+- Hard Link: A direct reference to the physical data on the disk (inode). It cannot span across different file systems.
+- Symbolic Link: A special file containing the text path to the original file (like a Windows shortcut). It can span file systems.
+
+3. Effect of Deleting Original File:
+Deleting the original file destroyed the symbolic link (rendering it broken/dangling). However, the hard link remained fully functional and retained the data, because the actual data blocks on the disk are only freed when the hard link count reaches zero.
+
+4. Conclusions:
+Hard links act as mirrors to the exact same underlying disk data, providing a safeguard against accidental deletion. Symbolic links are strictly path-based pointers and are entirely dependent on the existence of the original file path.
